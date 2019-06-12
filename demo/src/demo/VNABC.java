@@ -173,7 +173,7 @@ class VNABC{
 		if(flag==1)
 		{
 			bestFit=a.countfitness(dr,bestS[0],n);
-			/*System.out.println("Day:"+(r+1));
+			System.out.println("Day:"+(r+1));
 			for(int i=0;i<n;i++)
 			{
 				System.out.println("Driver:");
@@ -181,9 +181,9 @@ class VNABC{
 				System.out.println("Passenger:");
 				for(int j=0;j<dr[bestS[0]][i].capacity;j++)
 					System.out.println(dr[bestS[0]][i].pd[j].ID);
-				dr[bestS[0]][i].realtime=a.countRealTime(dr[bestS[0]][i]);
+				//dr[bestS[0]][i].realtime=a.countRealTime(dr[bestS[0]][i]);
 				//System.out.println(dr[bestS[0]][i].realtime);
-			}*/
+			}
 			System.out.println(bestFit);
 			//System.out.println(a.sumdistance(dr, bestS[0], n));
 			for(int x=0;x<m+n;x++)
@@ -204,7 +204,7 @@ class VNABC{
 		else
 		{
 			bestFit=a.countfitness(db,bestS[1],n);
-			/*System.out.println("Day:"+(r+1));
+			System.out.println("Day:"+(r+1));
 			for(int i=0;i<n;i++)
 			{
 				System.out.println("Driver:");
@@ -212,9 +212,9 @@ class VNABC{
 				System.out.println("Passenger:");
 				for(int j=0;j<db[bestS[1]][i].capacity;j++)
 					System.out.println(db[bestS[1]][i].pd[j].ID);
-				db[bestS[1]][i].realtime=a.countRealTime(db[bestS[1]][i]);
+				//db[bestS[1]][i].realtime=a.countRealTime(db[bestS[1]][i]);
 				//System.out.println(db[bestS[1]][i].realtime);
-			}*/
+			}
 			System.out.println(bestFit);
 			//System.out.println(a.sumdistance(db, bestS[1], n));
 			for(int x=0;x<m+n;x++)
